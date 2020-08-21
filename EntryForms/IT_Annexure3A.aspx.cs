@@ -35,7 +35,7 @@ public partial class EntryForms_IT_Annexure3A : System.Web.UI.Page
     int Annexure3FinMeansID = 0;
     int Annexure3BankAddressID = 0;
     int ApplicantID = 0;
-    string mode = "add";
+    string mode = "add"; //for insert
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!string.IsNullOrEmpty(Session["login_id"] as string))
