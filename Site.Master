@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PolicyManagement.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration &bull; Directorate of ICT & e-Governance</title>
+
+   
+  <link rel="apple-touch-icon" sizes="180x180" href="<%: ResolveUrl("~/images/apple-touch-icon.png")%>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%: ResolveUrl("~/images/favicon-32x32.png")%>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%: ResolveUrl("~/images/favicon-16x16.png")%>">
+  <link rel="manifest" href="<%: ResolveUrl("~/images/site.webmanifest")%>">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="<%: ResolveUrl("~/Content/bootstrap.min.css") %>">
+  <link rel="stylesheet" type="text/css" href="<%: ResolveUrl("~/Content/style.css") %>">
+  <link rel="stylesheet" type="text/css" href="<%: ResolveUrl("~/Content/all.min.css")%>">
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/jquery-3.4.1.slim.min.js") %>"></script>
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/popper.min.js") %>"></script>
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/bootstrap.min.js")%>"></script>
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/all.min.js")%>"></script>
+</head>
+<body>
+    <form runat="server">
+        
+               
+          <header class="bg-alpha">
+    <div class="container-fluid">
+      <a href="index.html">
+        <div class="logo"><img src="<%: ResolveUrl("~/images/emblem-of-india.png")%>" alt=""></div>
+      </a>
+      <div class="website-name">
+        <div class="branch-name text-beta">Directorate of ICT & e-Governance</div>
+        <div class="department-name text-beta">Department of Science & Technology</div>
+        <div class="government-name text-beta">Government of Gujarat</div>
+      </div> <!-- website-name ends -->
+      <div class="menu-container">
+        <ul>
+          <li><a href="/Default.aspx"><i class="fas fa-home"></i><span>Home</span></a></li>
+          <li><a href="/Account/Register.aspx"><i class="fas fa-handshake"></i><span>Register</span></a></li>
+          <li><a href="/Account/DataLoginPolicy.aspx"><i class="fas fa-sign-in-alt"></i><span>Login</span></a></li>
+        </ul>
+      </div> <!-- menu-container ends -->
+      <div class="clear"></div>
+    </div> <!-- container ends -->
+  </header>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            <hr />
+            <footer class="bg-alpha">
+    <div class="container text-center">
+      <span class="text-delta text-sm">&copy; Directorate of ICT & e-Governance. All Rights Reserved.</span>
+    </div>
+  </footer>
+        <%--</div>--%>
+    </form>
+</body>
+</html>

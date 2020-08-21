@@ -1,0 +1,1181 @@
+/*
+Project Name:
+Version: 1.1
+Author Name: Parimal Bhanderi
+Date: 07 January 2020
+*/
+/*
+Chapter:01 Bootstrap Customization
+Chapter:02 HTML Customization
+Chapter:03 Supplementary Style
+Chapter:04 Header Style
+Chapter:05 Footer Style
+Chapter:06 Gijgo Date Picker Customization
+Chapter:07 Offcanvas Style
+Chapter:08 DataTables Style
+Chapter:09 Child Pages Style
+Chapter:10 Progress Bar Style
+Chapter:11 Admin Card Style
+*/
+:root {
+	--alpha-color: #17252a;
+	--beta-color: #2b7a78;
+	--gamma-color: #3aafa9;
+	--delta-color: #def2f1;
+	--light-gray-color: #dee2e6;
+	--dim-gray-color: rgba(0,0,0,.125);
+	--alpha-shade-color: #2d4852;
+	--beta-shade-color: #359794;
+
+	--success-lite-color: #adebbb;
+	--info-lite-color: #a4e9f4;
+	--smoke-lite-color: #d9d9d9; /* card-back-i */
+
+	--success-color: #28a745;
+	--info-color: #17a2b8;
+	--smoke-color: #333333; /* card-border-i */
+}
+/* Chapter:01 Bootstrap Customization Starts */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto,
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10,
+.col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2,
+.col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12,
+.col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8,
+.col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto, .container, .container-fluid,
+section, .progress-box {
+	/*border:dotted 1px grey;*/
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+}
+hr.hr-one {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+hr.hr-two {
+	margin-top: 8px;
+	margin-bottom: 2px;
+}
+.btn, .form-control, .custom-file-input {
+	font-size: 14px;
+	padding: 7px 14px;
+	font-weight: 500;
+}
+.custom-select {
+	font-size: 14px;
+	font-weight: 500;
+}
+.btn {
+	border-radius: 1.5rem;	
+}
+.form-control,
+.custom-file-label,
+.custom-select {
+	color: var(--alpha-color, #17252a); /* alpha */
+	border: 1px solid var(--gamma-color, #3aafa9); /*gamma*/
+}
+.custom-file-label::after {
+	background-color: var(--delta-color, #def2f1); /* delta */
+}
+.btn-primary {
+	color: #fff;
+	background-color: var(--alpha-color, #17252a); /* alpha */
+	border-color:  var(--alpha-color, #17252a); /* alpha */
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: var(--alpha-shade-color, #2d4852); /* alpha shade */
+	border-color: var(--alpha-shade-color, #2d4852); /* alpha shade */
+}
+.btn-outline-primary {
+	color: var(--alpha-color, #17252a); /* alpha */
+	border-color: var(--alpha-color, #17252a); /* alpha */
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+	color: #fff;
+	background-color: var(--alpha-shade-color, #2d4852); /* alpha shade */
+	border-color: var(--alpha-shade-color, #2d4852); /* alpha shade */
+}
+.btn-secondary {
+	color: #fff;
+	background-color: var(--beta-color, #2b7a78); /* beta */
+	border-color:  var(--beta-color, #2b7a78); /* beta */
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+	color: #fff;
+	background-color: var(--beta-shade-color, #359794); /* beta shade */
+	border-color: var(--beta-shade-color, #359794); /* beta shade */
+}
+.btn-outline-secondary {
+	color: var(--beta-color, #2b7a78); /* beta */
+	border-color: var(--beta-color, #2b7a78); /* beta */
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+	color: #fff;
+	background-color: var(--beta-shade-color, #359794); /* beta shade */
+	border-color: var(--beta-shade-color, #359794); /* beta shade */
+}
+.btn-action {
+	background-color: #fff;
+	padding: 4px 8px !important;
+	font-size: 11px !important;
+	min-width: 60px;
+	/*width: 75px;*/
+	margin-top: 3px;
+}
+.btn-action i,
+.btn-action svg,
+.btn-action2 i,
+.btn-action2 svg  {
+	margin-right: 3px;
+}
+.btn-action2 {
+	background-color: #fff;
+	padding: 3px 0px !important;
+	font-size: 11px !important;
+	min-width: 60px;
+	width: 70px;
+	margin-top: 3px;
+}
+.list-group-item.active {
+	z-index: 2;
+	color: var(--beta-color, #2b7a78); /* beta */
+	background-color: var(--delta-color, #def2f1); /* delta */
+	border-color:  var(--delta-color, #def2f1); /* delta */
+}
+.list-group-item {
+	padding: 0.45rem 0.95rem;
+}
+.input-group-text {
+	background-color: #fff;
+	border-color:  var(--gamma-color, #3aafa9); /*gamma*/
+}
+.table {
+	margin-bottom: 0rem;
+}
+.table td,
+.table th {
+	padding: 0.2rem 0.2rem;
+	/*border-color: var(--light-gray-color, #c5ccd3); /* light gray */
+}
+.table th {
+	color: var(--beta-color, #2b7a78); /* beta */
+	background-color: #e2e6e9; /* #F5F5F5 rgb(245,245,245) */
+}
+.table thead th {
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	vertical-align: middle;
+}
+.table tbody td {
+	vertical-align: middle;
+}
+.table-bordered td {
+	/*border: solid 1px var(--light-gray-color, #c5ccd3); /* light gray */
+}
+.table-bordered th {
+	/*border: solid 1px var(--light-gray-color, #c5ccd3); /* light gray */
+}
+.progress {
+	height: 22px;
+}
+.progress-bar { 
+	background-color: var(--beta-color, #2b7a78); /* beta */
+	font-weight: 600;
+}
+.card:hover,
+.card:focus {
+	background-color: var(--delta-color, #def2f1); /* delta */
+	border-color: var(--delta-color, #def2f1); /* delta */
+}
+.card-body {
+	padding: 1rem;
+}
+.nav-tabs {
+	border-bottom: none;
+}
+.nav-link {
+	padding: 0.5rem 0.8rem;
+}
+.nav-tabs .nav-item {
+	text-align: center;
+	word-break: break-word;
+	margin: 0px 3px 3px 0px;
+}
+.nav-tabs .nav-link {
+	border: solid 1px var(--dim-gray-color, rgba(0,0,0,.125)); /* dim gray color */;
+	border-radius: 22px;
+	background-color: white;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	background-color: var(--delta-color, #def2f1); /* delta */
+	border-color: var(--gamma-color, #3aafa9); /*gamma*/
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+	background-color: var(--delta-color, #def2f1); /* delta */
+	border-color: var(--gamma-color, #3aafa9); /*gamma*/
+}
+@media (min-width: 576px) {
+	.list-group-item {
+		padding: 0.55rem 1.05rem;
+	}
+}
+@media (min-width: 768px) {
+	.list-group-item {
+		padding: 0.65rem 1.15rem;
+	}
+}
+@media (min-width: 992px) {
+	.btn, .form-control, .custom-file-input {
+		font-size: 16px;
+		padding: 8px 16px;
+	}
+	.custom-select {
+		font-size: 16px;
+	}
+}
+@media (min-width: 1200px) {}
+/* Chapter:01 Bootstrap Customization Ends */
+/* Chapter:02 HTML Customization Starts */
+body {
+	font-family: 'Quicksand', sans-serif;
+	background-image: url('../images/background.png');
+	background-color: #fff;
+	color: var(--alpha-color, #17252a); /* alpha */
+	font-weight: 400;
+}
+a { color: var(--beta-color, #2b7a78); /* beta */ font-weight: 600; }
+a:hover, a:focus { color: var(--alpha-color, #17252a); /* alpha */ text-decoration: none; }
+label,
+.custom-form-label { 
+	margin-bottom: 0.25rem; 
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+ul li {
+	text-align: justify;
+}
+ol li {
+	margin-bottom: 1rem;
+}
+/* Chapter:02 HTML Customization Ends */
+/* Chapter:03 Supplementary Style Starts */
+.clear { display: block; clear: both; }
+.text-alpha { color: var(--alpha-color, #17252a); /* alpha */ }
+.text-beta { color: var(--beta-color, #2b7a78); /* beta */ }
+.text-gamma { color: var(--gamma-color, #3aafa9); /* gamma */ }
+.text-delta { color: var(--delta-color, #def2f1); /* delta */ }
+.bg-alpha { background-color: var(--alpha-color, #17252a); /* alpha */ }
+.bg-beta { background-color: var(--beta-color, #2b7a78); /* beta */ }
+.bg-gamma { background-color: var(--gamma-color, #3aafa9); /* gamma */ }
+.bg-delta { background-color: var(--delta-color, #def2f1); /* delta */ }
+.bg-success-lite { background-color: var(--success-lite-color, #adebbb); /* success lite */ }
+.bg-info-lite { background-color: var(--info-lite-color, #a4e9f4); /* info lite */ }
+.bg-smoke-lite { background-color: var(--smoke-lite-color, #d9d9d9); }  /* smoke-lite-color */ /* card-back-i */
+.border-alpha { border:solid 1px var(--alpha-color, #17252a); /* alpha */ }
+.border-beta {  border:solid 1px var(--beta-color, #2b7a78); /* beta */ }
+.border-gamma {  border:solid 1px var(--gamma-color, #3aafa9); /* gamma */ }
+.border-delta {  border:solid 1px var(--delta-color, #def2f1); /* delta */ }
+.border-danger { border:solid 1px red; }
+.border-white { border: solid 1px #fff; }
+.border-success { border:solid 1px var(--success-color, #28a745); /* success */ }
+.border-info { border:solid 1px var(--info-color, #17a2b8); /* info */ }
+.border-smoke { border:solid 1px var(--smoke-color, #333333); } /* --smoke-color */ /* card-border-i */
+.border-transparent { border:solid 1px transparent; }
+.border-dim-gray {  border: solid 1px var(--dim-gray-color, rgba(0,0,0,.125)); /* dim-gray-color */ }
+.border-light-gray { border: solid 1px var(--light-gray-color, #dee2e6); } /* light-gray-color */
+.border-b-grey {  border-bottom: solid 1px var(--dim-gray-color, rgba(0,0,0,.125)); /* dim-gray-color */ }
+.border-radius { border-radius: 4px; }
+.weight-light { font-weight: 300; }
+.weight-medium { font-weight: 500; }
+.weight-semi-bold { font-weight: 600; }
+.weight-bold { font-weight: 700; }
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 13px; }
+.text-md { font-size: 15px; }
+.text-lg { font-size: 17px; }
+.text-xl { font-size: 28px; }
+@media (min-width: 576px) {
+	.text-xs { font-size: 13px; }
+	.text-sm { font-size: 14px; }
+	.text-md { font-size: 16px; }
+	.text-lg { font-size: 18px; }
+	.text-xl { font-size: 29px; }
+}
+@media (min-width: 768px) {
+	.text-xs { font-size: 14px; }
+	.text-sm { font-size: 15px; }
+	.text-md { font-size: 17px; }
+	.text-lg { font-size: 19px; }
+	.text-xl { font-size: 30px; }
+}
+@media (min-width: 992px) {
+	.text-xs { font-size: 15px; }
+	.text-sm { font-size: 16px; }
+	.text-md { font-size: 18px; }
+	.text-lg { font-size: 20px; }
+	.text-xl { font-size: 31px; }
+}
+@media (min-width: 1200px) {
+	.text-xs { font-size: 16px; }
+	.text-sm { font-size: 17px; }
+	.text-md { font-size: 19px; }
+	.text-lg { font-size: 21px; }
+	.text-xl { font-size: 32px; }
+}
+/* Chapter:03 Supplementary Style Ends */
+/* Chapter:04 Header Style Starts */
+header {
+	position: relative;
+	padding: 0.5rem 0px;
+	margin-bottom: 0.5rem;
+}
+header .container-fluid {
+	padding: 0px 0.25rem;
+}
+.logo {
+	position: absolute;
+	z-index: 1;
+	left: 7px;
+	top: 11px;
+	width: 100px;
+	height: 100px;
+	border-radius: 70px;
+	background-color: transparent;
+	border:solid 1px var(--alpha-color, #17252a); /* alpha */
+	transition: all 0.5s 0s ease;
+}
+.logo:hover {
+	background-color: #fff;
+}
+.logo img {
+	width: 80px;
+	height: 80px;
+	margin: 10px 0px 0px 10px;
+}
+.website-name {
+	width: 100%;
+	height: 106px;
+	background-color: var(--delta-color, #def2f1); /* delta */
+	border-radius: 100px 0px 0px 100px;
+	float: left;
+	padding: 1.2rem 0rem 1.2rem 4rem;
+}
+.menu-container {
+	width: 100%;
+	height: auto;
+	background-color: var(--delta-color, #def2f1); /* delta */
+	border-radius: 0px 100px 100px 0px;
+	float: right;
+	padding: 1rem 1rem 1rem 1rem;
+	margin-top: 0.5rem;
+}
+.branch-name,
+.department-name,
+.government-name {
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	padding-right: 5px;
+	color: var(--alpha-color, #17252a); /* alpha */
+}
+.branch-name {
+	font-weight: 600;
+	font-size: 15px;
+}
+.department-name,
+.government-name {
+	font-weight: 400;
+	font-size: 13px;
+}
+.menu-container ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	padding: 0rem 0px;
+}
+.menu-container ul li {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0px;
+}
+.menu-container ul li:last-child {
+	margin-right: 0px;
+}
+.menu-container ul li a {
+	text-decoration: none;
+	font-size: 15px;
+}
+.menu-container ul li a span {
+	padding-left: 5px;
+}
+@media (min-width: 768px) {
+	header {
+		margin-bottom: 0.5rem;
+	}
+	.website-name {
+		padding: 1.2rem 1rem 1.2rem 4rem;
+	}
+	.branch-name {
+		font-size: 16px;
+	}
+	.department-name,
+	.government-name {
+		font-size: 14px;
+	}
+	.menu-container ul li a {
+		font-size: 16px;
+	}
+}
+@media (min-width: 992px) {
+	header {
+		padding: 1rem 0px;
+		margin-bottom: 0.75rem;
+	}
+	header .container-fluid {
+		padding: 0px 0.5rem;
+	}
+	.logo {
+		left: calc(50% - 60px);
+		top: 9px;
+		width: 120px;
+		height: 120px;
+		background-color: var(--delta-color, #def2f1); /* delta */
+	}
+	.logo img {
+		width: 100px;
+		height: 100px;
+	}
+	.website-name {
+		width: calc(50%);
+		float: left;
+		padding: 1.2rem 0rem 1.2rem 4rem;
+	}
+	.menu-container {
+		width: calc(50%);
+		height: 106px;
+		padding: 1.2rem 4rem 1.2rem 0rem;
+		margin-top: 0rem;
+	}
+	.branch-name,
+	.department-name,
+	.government-name {
+		text-align: left;
+		padding-right: 0px;
+	}
+	.branch-name {
+		font-size: 16px;
+	}
+	.department-name,
+	.government-name {
+		font-size: 14px;
+	}
+	.menu-container ul {
+		padding: 1.3rem 0px;
+	}
+	.menu-container ul li a {
+		font-size: 16px;
+	}
+}
+@media (min-width: 1200px) {
+	header .container-fluid {
+		padding: 0px 1rem;
+	}
+}
+/* Chapter:04 Header Style Ends */
+/* Chapter:05 Footer Style Starts */
+footer {
+	padding: 0.5rem 0px;
+	margin-top: 0.25rem;
+}
+@media (min-width: 576px) {}
+@media (min-width: 768px) {
+	footer {
+		margin-top: 0.5rem;
+	}
+}
+@media (min-width: 992px) {
+	footer {
+		margin-top: 0.75rem;
+	}
+}
+@media (min-width: 1200px) {}
+/* Chapter:05 Footer Style Ends */
+/* Chapter:06 Gijgo Date Picker Customization Starts */
+.gj-picker-bootstrap {
+	border: 1px solid var(--gamma-color, #3aafa9) !important; /* gamma */
+	border-radius: 4px;
+	padding: 4px;
+}
+.gj-picker-bootstrap [role="header"] {
+	background: var(--delta-color, #def2f1) !important; /* delta */
+	color: var(--beta-color, #2b7a78) !important; /* beta */
+}
+.gj-picker-bootstrap .selected {
+	color: var(--beta-color, #2b7a78) !important; /* beta */
+}
+.gj-picker-bootstrap div[role="navigator"] {
+	margin: 5px 0px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.gj-picker-bootstrap table tr td.today div {
+	background: var(--delta-color, #def2f1) !important; /* delta */
+	color: var(--beta-color, #2b7a78) !important; /* beta */
+	border-radius: 4px;
+	font-weight: 700;
+}
+.gj-picker-bootstrap table tr td.selected.gj-cursor-pointer div {
+	color: var(--delta-color, #def2f1) !important; /* delta */
+	background-color: var(--beta-color, #2b7a78) !important; /* beta */
+	border-color: var(--beta-color, #2b7a78) !important; /* beta */
+	border-radius: 4px;
+	font-weight: 700;
+}
+/* Chapter:06 Gijgo Date Picker Customization Ends */
+/* Chapter:07 Offcanvas Style Starts */
+html,
+body {
+	overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+@media screen and (max-width: 767px) {
+	.row-offcanvas {
+		position: relative;
+		-webkit-transition: all .25s ease-out;
+		-o-transition: all .25s ease-out;
+		transition: all .25s ease-out;
+	}
+
+	.row-offcanvas-right {
+		right: 0;
+	}
+
+	.row-offcanvas-left {
+		left: 0;
+	}
+
+	.row-offcanvas-right .sidebar-offcanvas {
+		right: -50%; /* 6 columns */
+	}
+
+	.row-offcanvas-left .sidebar-offcanvas {
+		left: -50.5%; /* 6 columns */ /* -50% */
+	}
+
+	.row-offcanvas-right.active {
+		right: 50%; /* 6 columns */
+	}
+
+	.row-offcanvas-left.active {
+		left: 50.5%; /* 6 columns */
+	}
+	.sidebar-offcanvas {
+		position: absolute;
+		top: 0;
+		width: 50%; /* 50% */ /* 6 columns */
+	}
+}
+/* Chapter:07 Offcanvas Style Ends */
+/* Chapter:08 DataTables Style Starts */
+table.dataTable {
+	clear: both;
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+	max-width: none !important;
+	border-collapse: separate !important;
+	border-spacing: 0;
+}
+table.dataTable td,
+table.dataTable th {
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+table.dataTable td.dataTables_empty,
+table.dataTable th.dataTables_empty {
+	text-align: center;
+}
+table.dataTable.nowrap th,
+table.dataTable.nowrap td {
+	white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_length label {
+	font-weight: normal;
+	text-align: left;
+	white-space: nowrap;
+}
+.dataTables_length .custom-select {
+	padding: 0px 20px 0px 10px;
+}
+div.dataTables_wrapper div.dataTables_length select {
+	width: auto;
+	display: inline-block;
+}
+div.dataTables_wrapper div.dataTables_filter {
+	text-align: right;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+	font-weight: normal;
+	white-space: nowrap;
+	text-align: left;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+	margin-left: 0.5em;
+	display: inline-block;
+	width: auto;
+}
+div.dataTables_wrapper div.dataTables_info {
+	padding-top: 0.5em; /* 0.85em */
+	white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_paginate {
+	margin: 0;
+	white-space: nowrap;
+	text-align: right;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+	margin: 2px 0;
+	white-space: nowrap;
+	justify-content: center;
+}
+@media (min-width: 768px) {
+	div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+		justify-content: flex-start;
+	}
+}
+@media (min-width: 992px) {
+	div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+		justify-content: flex-end;
+	}
+}
+div.dataTables_wrapper div.dataTables_processing {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+	margin-top: -26px;
+	text-align: center;
+	padding: 1em 0;
+}
+table.dataTable thead > tr > th.sorting_asc,
+table.dataTable thead > tr > th.sorting_desc,
+table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+	padding-right: 30px;
+}
+table.dataTable thead > tr > th:active,
+table.dataTable thead > tr > td:active {
+	outline: none;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+	cursor: pointer;
+	position: relative;
+}
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+	position: absolute;
+	bottom: 0.9em;
+	display: block;
+	opacity: 0.3;
+}
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:before {
+	right: 1em;
+	content: "\2191";
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+	right: 0.5em;
+	content: "\2193";
+}
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:after {
+	opacity: 1;
+}
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc_disabled:after {
+	opacity: 0;
+}
+div.dataTables_scrollHead table.dataTable {
+	margin-bottom: 0 !important;
+}
+div.dataTables_scrollBody table {
+	border-top: none;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+div.dataTables_scrollBody table thead .sorting:before,
+div.dataTables_scrollBody table thead .sorting_asc:before,
+div.dataTables_scrollBody table thead .sorting_desc:before,
+div.dataTables_scrollBody table thead .sorting:after,
+div.dataTables_scrollBody table thead .sorting_asc:after,
+div.dataTables_scrollBody table thead .sorting_desc:after {
+	display: none;
+}
+div.dataTables_scrollBody table tbody tr:first-child th,
+div.dataTables_scrollBody table tbody tr:first-child td {
+	border-top: none;
+}
+div.dataTables_scrollFoot > .dataTables_scrollFootInner {
+	box-sizing: content-box;
+}
+div.dataTables_scrollFoot > .dataTables_scrollFootInner > table {
+	margin-top: 0 !important;
+	border-top: none;
+}
+@media screen and (max-width: 767px) {
+	div.dataTables_wrapper div.dataTables_length,
+	div.dataTables_wrapper div.dataTables_filter,
+	div.dataTables_wrapper div.dataTables_info,
+	div.dataTables_wrapper div.dataTables_paginate {
+		text-align: center;
+	}
+}
+table.dataTable.table-sm > thead > tr > th {
+	padding-right: 20px;
+}
+table.dataTable.table-sm .sorting:before,
+table.dataTable.table-sm .sorting_asc:before,
+table.dataTable.table-sm .sorting_desc:before {
+	top: 5px;
+	right: 0.85em;
+}
+table.dataTable.table-sm .sorting:after,
+table.dataTable.table-sm .sorting_asc:after,
+table.dataTable.table-sm .sorting_desc:after {
+	top: 5px;
+}
+table.table-bordered.dataTable th,
+table.table-bordered.dataTable td {
+	border-left-width: 0;
+}
+table.table-bordered.dataTable th:last-child,
+table.table-bordered.dataTable th:last-child,
+table.table-bordered.dataTable td:last-child,
+table.table-bordered.dataTable td:last-child {
+	border-right-width: 0;
+}
+table.table-bordered.dataTable tbody th,
+table.table-bordered.dataTable tbody td {
+	border-bottom-width: 0;
+}
+div.dataTables_scrollHead table.table-bordered {
+	border-bottom-width: 0;
+}
+div.table-responsive > div.dataTables_wrapper > div.row {
+	margin: 0;
+}
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:first-child {
+	padding-left: 0;
+}
+div.table-responsive > div.dataTables_wrapper > div.row > div[class^="col-"]:last-child {
+	padding-right: 0;
+}
+.page-item.active .page-link {
+	background-color: var(--delta-color, #def2f1); /* delta */
+	color: var(--beta-color, #2b7a78); /* beta */
+	border-color: var(--delta-color, #def2f1); /* delta */
+}
+.page-link {
+	color: var(--beta-color, #2b7a78); /* beta */
+	background-color:#fff;
+	border: 1px solid  var(--light-gray-color, #c5ccd3); /* light gray */
+}
+.page-link:hover {
+	color: var(--gamma-color, #3aafa9); /* gamma */
+}
+/* Chapter:08 DataTables Style Ends */
+/* Chapter:09 Child Pages Style Starts */
+.canvas {
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem
+}
+.canvas section {
+	/*padding: 0.5rem;*/
+}
+.page-header,
+.page-header-o {
+	border-radius: 22px;
+	padding: 5px 0px;
+	margin: 1.5rem 0rem;
+}
+.page-header-icon,
+.form-title-icon,
+.zero-app-icon {
+	top:-20px;
+	left:-15px;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	border-radius: 18px;
+}
+.page-header-icon,
+.form-title-icon {
+	line-height: 34px;
+}
+.page-header-icon svg,
+.page-header-icon i,
+.page-header-icon span,
+.form-title-icon svg,
+.form-title-icon i,
+.form-title-icon span {
+	font-size: 19px;
+}
+.page-header-icon span {
+	font-weight: 500;
+}
+.zero-app-icon {
+	line-height: 39px;
+}
+.zero-app-icon svg,
+.zero-app-icon i,
+.zero-app-icon span {
+	font-size:22px;
+}
+.page-header-text {
+	margin-left: 20px;
+}
+.form-container,
+.myapps-container {
+	border-radius: 22px;
+	padding: 2rem 1rem 1rem;
+	margin: 1.5rem 0rem;
+}
+.zero-app-container {
+	border-radius: 22px;
+	padding: 1rem;
+	margin: 1.5rem 0rem;
+}
+.table-container {
+	border-radius: 22px;
+	padding: 1.8rem 1rem 1rem;
+	margin: 1.5rem 0rem;
+}
+.table-container .table td,
+.myapps-container .table td {
+	padding: 0.2rem 0.5rem;
+}
+.table-container .table-responsive {
+	border: solid 1px var(--light-gray-color, #c5ccd3); /* light gray */
+	border-radius: 6px;
+}
+.table-container .table td:first-child,
+.table-container .table th:first-child {
+	border-left: none;
+}
+.table-container .table td:last-child,
+.table-container .table th:last-child {
+	border-right: none
+}
+.table-container .table tr:first-child td,
+.table-container .table tr:first-child th {
+	border-top: none;
+}
+.table-container .table tr:last-child td {
+	border-bottom: none;
+}
+.myapps-container .table td:first-child {
+	width: auto;
+}
+.form-header-text {
+	top:-18px;
+	left: 30px;
+	padding: 5px 20px;
+	border-radius: 22px;
+}
+.form-header-right {
+	/*border:solid 1px red;*/
+	top:10px;
+	right: 10px;
+}
+.table-data-label {
+	width: 45%;
+}
+.form-container-child {
+	width: 100%;
+	padding: 5px 15px 0px 15px;
+	border-radius: 0.5rem;
+}
+.assi-sought-table th:nth-child(2),
+.assi-sought-table td:nth-child(2),
+.assi-sought-table th:nth-child(3),
+.assi-sought-table td:nth-child(3),
+.assi-sought-table th:nth-child(4),
+.assi-sought-table td:nth-child(4) {
+	text-align: center;
+}
+.assi-sought-table th:nth-child(2) {
+	font-size: 12px;
+}
+.assi-sought-table th:nth-child(1),
+.assi-sought-table td:nth-child(1) {
+	width: 35%;
+}
+.assi-sought-table th:nth-child(2),
+.assi-sought-table td:nth-child(2) {
+	width: 15%; /* 96px */
+}
+.annex-1-dir-table thead th,
+.annex-1-dir-table th {
+	font-size: 12px;
+}
+.annex-1-dir-table tbody td,
+.annex-1-dir-table td {
+	font-size: 14px;
+}
+.annex-1-dir-table thead th:last-child,
+.annex-1-dir-table th:last-child,
+.annex-1-dir-table tbody td:last-child,
+.annex-1-dir-table td:last-child {
+	text-align: center;
+}
+.annex-2-table th:nth-child(1),
+.annex-2-table td:nth-child(1),
+.annex-4-table th:nth-child(1),
+.annex-4-table td:nth-child(1) {
+	text-align: center;
+	width: 40px;
+}
+.annex-2-table th:nth-child(2),
+.annex-2-table td:nth-child(2),
+.annex-4-table th:nth-child(2),
+.annex-4-table td:nth-child(2) {
+	width: 40%;
+}
+.annex-5-table tbody td,
+.annex-2-draft-table tbody td {
+	vertical-align: top;
+}
+.annex-5-table textarea {
+	width: calc(100%);
+}
+.abcd::before {
+	content: '*';
+}
+@media (min-width: 576px) {
+	.form-container,
+	.myapps-container {
+		padding: 2rem 2rem 1rem;
+	}
+	.zero-app-container {
+		padding: 1rem 2rem;
+	}
+	.form-header-text {
+		top:-19px;
+		left: 33px;
+	}
+}
+@media (min-width: 768px) {
+	.form-container,
+	.myapps-container {
+		padding: 2.25rem 2.25rem 1.25rem;
+	}
+	.zero-app-container {
+		padding: 1.25rem 2.25rem;
+	}
+	.form-header-text {
+		top:-20px;
+		left: 36px;
+	}
+}
+@media (min-width: 992px) {
+	.form-container,
+	.myapps-container {
+		padding: 2.5rem 2.5rem 1.5rem;
+	}
+	.zero-app-container {
+		padding: 1.5rem 2.5rem;
+	}
+	.myapps-container .table td:first-child {
+		width: 180px;
+	}
+	.form-header-text {
+		top:-21px;
+		left: 39px;
+	}
+	.annex-5-table textarea {
+		width: calc(100% - 1%);
+	}
+}
+@media (min-width: 1200px) {
+	.form-container,
+	.myapps-container {
+		padding: 3rem 3rem 2rem;
+	}
+	.zero-app-container {
+		padding: 2rem 3rem;
+	}
+	.form-header-text {
+		top:-22px;
+		left: 42px;
+	}
+}
+/* Chapter:09 Child Pages Style Ends */
+/* Chapter:10 Progress Bar Style Starts */
+.progress-box ul {
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+.progress-box ul li {
+	list-style: none;
+	text-align: center;
+}
+.progress-box ul li a {
+	text-decoration: none;
+}
+.pro-circle {
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	line-height: 33px;
+	font-size: 18px;
+	border-radius: 28px;
+}
+.pro-arrow {
+	display: inline-block;
+	line-height: 35px;
+	font-size: 28px;
+	padding: 0px 2px;
+}
+@media (min-width: 576px) {
+	.pro-circle {
+		height: 40px;
+		width: 40px;
+		line-height: 37px;
+		font-size: 20px;
+	}
+	.pro-arrow {
+		line-height: 40px;
+		font-size: 30px;
+		padding: 0px 4px;
+	}
+}
+@media (min-width: 768px) {
+	.pro-circle {
+		height: 45px;
+		width: 45px;
+		line-height: 42px;
+		font-size: 22px;
+	}
+	.pro-arrow {
+		line-height: 45px;
+		font-size: 32px;
+		padding: 0px 6px;
+	}
+}
+@media (min-width: 992px) {
+	.pro-circle {
+		height: 50px;
+		width: 50px;
+		line-height: 48px;
+		font-size: 24px;
+	}
+	.pro-arrow {
+		line-height: 50px;
+		font-size: 34px;
+		padding: 0px 8px;
+	}
+}
+@media (min-width: 1200px) {
+	.pro-circle {
+		height: 55px;
+		width: 55px;
+		line-height: 53px;
+		font-size: 26px;
+	}
+	.pro-arrow {
+		line-height: 55px;
+		font-size: 36px;
+		padding: 0px 10px;
+	}
+}
+/* Chapter:10 Progress Bar Style Ends */
+/* Chapter:11 Admin Card Style Starts */
+.card-back-a { background-color: #ffcce6; }
+.card-border-a { border: solid 1px #b30059; }
+.card-text-a { color: #b30059; }
+
+.card-back-b { background-color: #ffebcc; }
+.card-border-b { border: solid 1px #b36b00; }
+.card-text-b { color: #b36b00; }
+
+.card-back-c { background-color: #ecffb3; }
+.card-border-c { border: solid 1px #739900; }
+.card-text-c { color: #739900; }
+
+.card-back-d { background-color: #ccfff2; }
+.card-border-d { border: solid 1px #009973; }
+.card-text-d { color: #009973; }
+
+.card-back-e { background-color: #ccf5ff; }
+.card-border-e { border: solid 1px #008fb3; }
+.card-text-e { color: #008fb3; }
+
+.card-back-f { background-color: #ccccff; }
+.card-border-f { border: solid 1px #000099; }
+.card-text-f { color: #000099; }
+
+.card-back-g { background-color: #ffb3ff; }
+.card-border-g { border: solid 1px #800080; }
+.card-text-g { color: #800080; }
+
+.card-back-h { background-color: #ffc2b3; }
+.card-border-h { border: solid 1px #cc2900; }
+.card-text-h { color: #cc2900; }
+
+.card-back-i { background-color: #d9d9d9; }
+.card-border-i { border: solid 1px #333333; }
+.card-text-i { color: #333333; }
+
+.card-back-j { background-color: #ccffcc; }
+.card-border-j { border: solid 1px #003300; }
+.card-text-j { color: #003300; }
+/* Chapter:11 Admin Card Style Ends */
+
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+

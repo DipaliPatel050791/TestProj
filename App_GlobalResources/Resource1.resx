@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aadhar" xml:space="preserve">
+    <value>Aadhar Number</value>
+  </data>
+  <data name="Address1" xml:space="preserve">
+    <value>Address Line 1</value>
+  </data>
+  <data name="Address2" xml:space="preserve">
+    <value>Address Line 2</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City/Village</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="District" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="EmailId" xml:space="preserve">
+    <value>Email Id</value>
+  </data>
+  <data name="EnterCaptcha" xml:space="preserve">
+    <value>Enter Captcha</value>
+  </data>
+  <data name="EntityName" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lblITNewCity" xml:space="preserve">
+    <value>City / Village&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblITNewDistrict" xml:space="preserve">
+    <value>District&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblITNewEmailId" xml:space="preserve">
+    <value>Office Email Id&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblITNewFaxNo" xml:space="preserve">
+    <value>FAX Number</value>
+  </data>
+  <data name="lblITNewOfficeAddress1" xml:space="preserve">
+    <value>Office Address Line 1&lt;/span&gt;&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblITNewOfficeAddress2" xml:space="preserve">
+    <value>OfficeAddress Line 2</value>
+  </data>
+  <data name="lblITNewOfficeMobNo" xml:space="preserve">
+    <value>Office Mobile Number</value>
+  </data>
+  <data name="lblITNewOfficeTelNo" xml:space="preserve">
+    <value>Office Telephone Number</value>
+  </data>
+  <data name="lblITNewPostalCode" xml:space="preserve">
+    <value>Postal Code&lt;/span&gt;&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblITNewRegNo" xml:space="preserve">
+    <value>Registration Number&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblITNewState" xml:space="preserve">
+    <value>State&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblParnershipDeed" xml:space="preserve">
+    <value>Please attach certified copy of the partnership deed&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="lblTypeofEntity" xml:space="preserve">
+    <value>Type of the entity that will seek assistance under the scheme&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="MobileNumber" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="PanNo" xml:space="preserve">
+    <value>Entity PAN</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PostCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="ReadAgree" xml:space="preserve">
+    <value>I Have Read and Agree to the</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="TelephoneNumber" xml:space="preserve">
+    <value>Telephone Number</value>
+  </data>
+  <data name="TermsCondition" xml:space="preserve">
+    <value>Terms &amp; Condition</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="NewITApplicantDetail" xml:space="preserve">
+    <value>applicant's details</value>
+  </data>
+  <data name="NewITAssSought" xml:space="preserve">
+    <value>assistance sought</value>
+  </data>
+  <data name="NewITBasicDetail" xml:space="preserve">
+    <value>basic details</value>
+  </data>
+  <data name="NewITcorrespondenceaddress" xml:space="preserve">
+    <value>correspondence address</value>
+  </data>
+  <data name="NewITIacknowledgement" xml:space="preserve">
+    <value>acknowledgement</value>
+  </data>
+  <data name="NewITIDenotedField" xml:space="preserve">
+    <value>&lt;span class="text-danger text-lg m-1"&gt;*&lt;/span&gt;denoted required field.</value>
+  </data>
+  <data name="NewITidentityProof" xml:space="preserve">
+    <value>identity proof</value>
+  </data>
+  <data name="NewITIncenDetail" xml:space="preserve">
+    <value>incentive details</value>
+  </data>
+  <data name="NewITlblAddress1" xml:space="preserve">
+    <value>Address Line 1&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblAddress2" xml:space="preserve">
+    <value>Address Line 2</value>
+  </data>
+  <data name="NewITlblCity" xml:space="preserve">
+    <value>City / Village&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblEmailId" xml:space="preserve">
+    <value>Email Id&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblFirstName" xml:space="preserve">
+    <value>First Name&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblidentityProof" xml:space="preserve">
+    <value>identity proof&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblIDNo" xml:space="preserve">
+    <value>ID number&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblLastName" xml:space="preserve">
+    <value>Last Name&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblMobileNumber" xml:space="preserve">
+    <value>Mobile Number&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblPostalCode" xml:space="preserve">
+    <value>Postal Code&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblScanCopy" xml:space="preserve">
+    <value>Please upload scanned copy of identity proof&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblState" xml:space="preserve">
+    <value>State&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;&lt;/label&gt;</value>
+  </data>
+  <data name="NewITlblTelePhoneNo" xml:space="preserve">
+    <value>Telephone Number</value>
+  </data>
+  <data name="NewITNatureEntity" xml:space="preserve">
+    <value>nature of entity</value>
+  </data>
+  <data name="RegistrationNo" xml:space="preserve">
+    <value>Registration Number : </value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status : </value>
+  </data>
+  <data name="ITPolicyViewAssistAmountCapSub" xml:space="preserve">
+    <value>Capital Subsidy</value>
+  </data>
+  <data name="ITPolicyViewAssistAmountEPF" xml:space="preserve">
+    <value>Employment Generation Grant On EPF</value>
+  </data>
+  <data name="ITPolicyViewAssistAmountGST" xml:space="preserve">
+    <value>VAT/CST/GST Incentive</value>
+  </data>
+  <data name="ITPolicyViewAssistAmountIntSubsidy" xml:space="preserve">
+    <value>Interest Subsidy</value>
+  </data>
+  <data name="ITPolicyViewAssistAmountLeaseRental" xml:space="preserve">
+    <value>Lease Rental Subsidy</value>
+  </data>
+  <data name="ITPolicyViewAssistAmountPowerTariff" xml:space="preserve">
+    <value>Power Tariff &amp; Electricity Duty</value>
+  </data>
+  <data name="ITPolicyViewAssistAmountQC" xml:space="preserve">
+    <value>Quality Certification</value>
+  </data>
+  <data name="ITPolicyViewAssistAmountStampDuty" xml:space="preserve">
+    <value>Reimbursement Of Stamp
+Duty / Registration Fee</value>
+  </data>
+  <data name="ITPolicyViewAssistanceSoughtFor" xml:space="preserve">
+    <value>Assistance Will Be Sought For</value>
+  </data>
+  <data name="ITPolicyViewAuthorizePersonAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ITPolicyViewAuthorizePersonDesignation" xml:space="preserve">
+    <value>Designation</value>
+  </data>
+  <data name="ITPolicyViewAuthorizePersonEmailID" xml:space="preserve">
+    <value>Email Id</value>
+  </data>
+  <data name="ITPolicyViewAuthorizePersonMobileNo" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="ITPolicyViewAuthorizePersonName" xml:space="preserve">
+    <value>Authorised Person Name</value>
+  </data>
+  <data name="ITPolicyViewCertifiedMemorendumDocs" xml:space="preserve">
+    <value>Certified Copy Of The Memorandum And Articles Of Association Or Equivalent Certified Copy Of The Memorandum And Articles Of Association Or Equivalent Registration Documents Uploaded?</value>
+  </data>
+  <data name="ITPolicyViewCertOfIncorp" xml:space="preserve">
+    <value>Certificate Of Incorporation</value>
+  </data>
+  <data name="ITPolicyViewCorresAddressLine1" xml:space="preserve">
+    <value>Address Line 1</value>
+  </data>
+  <data name="ITPolicyViewCorresAddressLine2" xml:space="preserve">
+    <value>Address Line 2</value>
+  </data>
+  <data name="ITPolicyViewCorresCityVillage" xml:space="preserve">
+    <value>City / Village</value>
+  </data>
+  <data name="ITPolicyViewCorresPostalCode" xml:space="preserve">
+    <value>PostalCode</value>
+  </data>
+  <data name="ITPolicyViewCorresState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ITPolicyViewCorresTelephoneNo" xml:space="preserve">
+    <value>Telephone Number</value>
+  </data>
+  <data name="ITPolicyViewDirectorPromoterAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ITPolicyViewDirectorPromoterEmailID" xml:space="preserve">
+    <value>Email Id</value>
+  </data>
+  <data name="ITPolicyViewDirectorPromoterMobileNo" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="ITPolicyViewDirectorPromoterName" xml:space="preserve">
+    <value>Director / Promotor Name</value>
+  </data>
+  <data name="ITPolicyViewDirectorPromoterPANNo" xml:space="preserve">
+    <value>PAN Number</value>
+  </data>
+  <data name="ITPolicyViewEmailID" xml:space="preserve">
+    <value>Email ID</value>
+  </data>
+  <data name="ITPolicyViewEntityEmailID" xml:space="preserve">
+    <value>Entity Email Id</value>
+  </data>
+  <data name="ITPolicyViewEntityFaxNo" xml:space="preserve">
+    <value>Entity FAX Number</value>
+  </data>
+  <data name="ITPolicyViewEntityMobileNo" xml:space="preserve">
+    <value>Entity Mobile Number</value>
+  </data>
+  <data name="ITPolicyViewEntityName" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="ITPolicyViewEntityPAN" xml:space="preserve">
+    <value>Entity PAN</value>
+  </data>
+  <data name="ITPolicyViewEntityTelephoneNo" xml:space="preserve">
+    <value>Entity Telephone Number</value>
+  </data>
+  <data name="ITPolicyViewFactoryAddress1" xml:space="preserve">
+    <value>Address Line 1</value>
+  </data>
+  <data name="ITPolicyViewFactoryAddress2" xml:space="preserve">
+    <value>Address Line 2</value>
+  </data>
+  <data name="ITPolicyViewFactoryCityVillage" xml:space="preserve">
+    <value>City / Village</value>
+  </data>
+  <data name="ITPolicyViewFactoryPostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="ITPolicyViewFactoryState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ITPolicyViewFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ITPolicyViewFSActivities" xml:space="preserve">
+    <value>Brief Description Of The Activities Undertaken</value>
+  </data>
+  <data name="ITPolicyViewFSArea" xml:space="preserve">
+    <value>Tentative Area Of The Land Where Finishing School Will Be Set Up</value>
+  </data>
+  <data name="ITPolicyViewFSLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ITPolicyViewFSProjectCost" xml:space="preserve">
+    <value>Tentative Project Cost</value>
+  </data>
+  <data name="ITPolicyViewGSTIN" xml:space="preserve">
+    <value>GSTIN</value>
+  </data>
+  <data name="ITPolicyViewIDNumber" xml:space="preserve">
+    <value>ID Number</value>
+  </data>
+  <data name="ITPolicyViewIDProof" xml:space="preserve">
+    <value>Identity Proof</value>
+  </data>
+  <data name="ITPolicyViewIsAuthorizeandApplicantSame" xml:space="preserve">
+    <value>Is The Authorized Person And Applicant The Same?</value>
+  </data>
+  <data name="ITPolicyViewIsAuthorizePersonPersonAddressSameCorresAddr" xml:space="preserve">
+    <value>Is The Authorised Person Address Same As The Correspondence Address?</value>
+  </data>
+  <data name="ITPolicyViewIsCACertiShareHolding" xml:space="preserve">
+    <value>CA Certificate Showing The Shareholding Pattern Uploaded?</value>
+  </data>
+  <data name="ITPolicyViewIsDirectorPromoterAddressSameAsCorres" xml:space="preserve">
+    <value>Is The Director / Promotor Address Same As The Correspondence Address?</value>
+  </data>
+  <data name="ITPolicyViewIsFactoryAddressSameAsCorres" xml:space="preserve">
+    <value>Is The Factory Address Same As The Correspondence Address?</value>
+  </data>
+  <data name="ITPolicyViewIsGSTRegCertiUploaded" xml:space="preserve">
+    <value>GST Registration Certificate Uploaded?</value>
+  </data>
+  <data name="ITPolicyViewIsOfficeAddressSameAsCorres" xml:space="preserve">
+    <value>Is The Office Address Same As The Correspondence Address?</value>
+  </data>
+  <data name="ITPolicyViewIsRegistrationDocUploaded" xml:space="preserve">
+    <value>Scanned Copy Of Registation Uploaded?</value>
+  </data>
+  <data name="ITPolicyViewITeSParkActivities" xml:space="preserve">
+    <value>Brief Description Of The Activities Undertaken</value>
+  </data>
+  <data name="ITPolicyViewITeSParkArea" xml:space="preserve">
+    <value>Tentative Area Of The Land Where IT/ITeS Park Will Be Set Up</value>
+  </data>
+  <data name="ITPolicyViewITeSParkBuiltUpArea" xml:space="preserve">
+    <value>Total Built Up Area</value>
+  </data>
+  <data name="ITPolicyViewITeSParkLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ITPolicyViewITeSParkProjectCost" xml:space="preserve">
+    <value>Tentative Project Cost, Excluding Cost Of Land</value>
+  </data>
+  <data name="ITPolicyViewITeSParkType" xml:space="preserve">
+    <value>Park Type</value>
+  </data>
+  <data name="ITPolicyViewITeSUnitLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ITPolicyViewITeSUnitTentativeArea" xml:space="preserve">
+    <value>Tentative Area</value>
+  </data>
+  <data name="ITPolicyViewITeSUnitTentativeEmployment" xml:space="preserve">
+    <value>Tentative Employment</value>
+  </data>
+  <data name="ITPolicyViewITeSUnitTentativeInvestment" xml:space="preserve">
+    <value>Tentative Investment</value>
+  </data>
+  <data name="ITPolicyViewITeSUnitType" xml:space="preserve">
+    <value>Unit Type</value>
+  </data>
+  <data name="ITPolicyViewITIndusAmount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="ITPolicyViewITIndusAssistanceAvail" xml:space="preserve">
+    <value>Did You Avail This Assistance Under The Current Scheme Previously?</value>
+  </data>
+  <data name="ITPolicyViewITIndusDate" xml:space="preserve">
+    <value>Date For The Exhibition / Trade Fair</value>
+  </data>
+  <data name="ITPolicyViewITIndusExhibitionDate" xml:space="preserve">
+    <value>Date Of The Exhibition / Trade Fair</value>
+  </data>
+  <data name="ITPolicyViewITIndusExpenditure" xml:space="preserve">
+    <value>Expenditure Planned By Association</value>
+  </data>
+  <data name="ITPolicyViewITIndusName" xml:space="preserve">
+    <value>Exhibition / Trade Fair Name</value>
+  </data>
+  <data name="ITPolicyViewLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="ITPolicyViewMobileNo" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="ITPolicyViewOfficeAddress1" xml:space="preserve">
+    <value>Address Line 1</value>
+  </data>
+  <data name="ITPolicyViewOfficeAddress2" xml:space="preserve">
+    <value>Address Line 2</value>
+  </data>
+  <data name="ITPolicyViewOfficeCityVillage" xml:space="preserve">
+    <value>City / Village</value>
+  </data>
+  <data name="ITPolicyViewOfficePostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="ITPolicyViewOfficeState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ITPolicyViewPartnershipDeedDocs" xml:space="preserve">
+    <value>Certified Copy Of The Partnership Deed Uploaded?</value>
+  </data>
+  <data name="ITPolicyViewRequiredDocRegistrationNo" xml:space="preserve">
+    <value>Registration Number</value>
+  </data>
+  <data name="ITPolicyViewRnDActivities" xml:space="preserve">
+    <value>Brief Description Of The Activities Undertaken</value>
+  </data>
+  <data name="ITPolicyViewRnDArea" xml:space="preserve">
+    <value>Tentative Area Of The Land Where R&amp;D Institute Will Be Set Up</value>
+  </data>
+  <data name="ITPolicyViewRnDLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="ITPolicyViewRnDProjectCost" xml:space="preserve">
+    <value>Tentative Project Cost</value>
+  </data>
+  <data name="ITPolicyViewScannedIDDocUploaded" xml:space="preserve">
+    <value>Scanned Copy Of Identity Proof Uploaded?</value>
+  </data>
+  <data name="ITPolicyViewScannedPANDocUploaded" xml:space="preserve">
+    <value>Scanned Copy Of The PAN Card Uploaded?</value>
+  </data>
+  <data name="ITPolicyViewSponsOrg" xml:space="preserve">
+    <value>Research Assigning Organization</value>
+  </data>
+  <data name="ITPolicyViewSponsOrgNameAssist" xml:space="preserve">
+    <value>Name Of The Organization If You Received Assistance For A Similar Project</value>
+  </data>
+  <data name="ITPolicyViewSponsResearchCost" xml:space="preserve">
+    <value>Total Cost For Undertaking Research</value>
+  </data>
+  <data name="ITPolicyViewSponsResearchDuration" xml:space="preserve">
+    <value>Total Duration Of Research</value>
+  </data>
+  <data name="ITPolicyViewSponsTopic" xml:space="preserve">
+    <value>Research Topic</value>
+  </data>
+  <data name="ITPolicyViewTypeOfEntity" xml:space="preserve">
+    <value>Type Of The Entity That Will Seek Assistance Under The Scheme</value>
+  </data>
+  <data name="ITPolicyViewUploadDocCertOfIncorp" xml:space="preserve">
+    <value>Please Upload Scanned Copy Of Certificate Of Incorporation</value>
+  </data>
+  <data name="NewITAuthorisedPersonDetails" xml:space="preserve">
+    <value>authorised person details</value>
+  </data>
+  <data name="NewITCompany_Business_Entity name" xml:space="preserve">
+    <value>Please enter Company / Business / Entity name.</value>
+  </data>
+  <data name="NewITFactoryAddress" xml:space="preserve">
+    <value>factory address</value>
+  </data>
+  <data name="NewITlblAuthorisedPersonAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="NewITlblAuthorisedPersonDesignation" xml:space="preserve">
+    <value>Designation&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblAuthorisedPersonEmail" xml:space="preserve">
+    <value>Email Id&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblAuthorisedPersonMobileNo" xml:space="preserve">
+    <value>Mobile Number&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblAuthorisedPersonName" xml:space="preserve">
+    <value>Authorised Person Name&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblCopyOfMemorandum_RegDoc" xml:space="preserve">
+    <value>Please attach certified copy of the memorandum and articles of association or equivalent registration documents&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblCopyOfPartnershipdeed" xml:space="preserve">
+    <value>please attach certified copy of the partnership deed&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblentitydetails" xml:space="preserve">
+    <value>entity details</value>
+  </data>
+  <data name="NewITlblEntityEmailid" xml:space="preserve">
+    <value>Entity Email Id&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblEntityFaxNo" xml:space="preserve">
+    <value>Entity FAX Number</value>
+  </data>
+  <data name="NewITlblEntityFirstName" xml:space="preserve">
+    <value>Entity Name&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblEntityMobileNo" xml:space="preserve">
+    <value>Entity Mobile Number&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblEntityPAN" xml:space="preserve">
+    <value>Entity PAN</value>
+  </data>
+  <data name="NewITlblEntityTelephoneNo" xml:space="preserve">
+    <value>Entity Telephone Number</value>
+  </data>
+  <data name="NewITlblFactoryAddressLine1" xml:space="preserve">
+    <value>Address Line 1&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblFactoryAddressLine2" xml:space="preserve">
+    <value>Address Line 2</value>
+  </data>
+  <data name="NewITlblFactoryCity" xml:space="preserve">
+    <value>City / Village&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblFactoryPostalCode" xml:space="preserve">
+    <value>Postal Code&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblFactoryState" xml:space="preserve">
+    <value>State&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblOfficeAddressLine1" xml:space="preserve">
+    <value>Address Line 1&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblOfficeAddressLine2" xml:space="preserve">
+    <value>Address Line 2</value>
+  </data>
+  <data name="NewITlblOfficeCity" xml:space="preserve">
+    <value>City / Village&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblOfficePostalCode" xml:space="preserve">
+    <value>Postal Code&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblOfficeState" xml:space="preserve">
+    <value>State&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblReqDocCACerti" xml:space="preserve">
+    <value>Please upload CA certificate showing the shareholding pattern&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblReqDocGSTIN" xml:space="preserve">
+    <value>GSTIN</value>
+  </data>
+  <data name="NewITlblReqDocIncorporationCerti" xml:space="preserve">
+    <value>Certificate Of Incorporation&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblReqDocRegistrationNo" xml:space="preserve">
+    <value>Registration Number&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblReqDocScanCopyIncorpoCerti" xml:space="preserve">
+    <value>Please upload scanned copy of certificate of incorporation&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblReqDocScanCopyRegistration" xml:space="preserve">
+    <value>Please upload scanned copy of registation&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITlblTypesOfEntityAssistance" xml:space="preserve">
+    <value>Type of the entity that will seek assistance under the scheme&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="NewITOfficeAddress" xml:space="preserve">
+    <value>office address</value>
+  </data>
+  <data name="NewITPanOfPro_Part_Com_Asso" xml:space="preserve">
+    <value>Please enter PAN of Proprietor / Partnership Firm / Company / Association.</value>
+  </data>
+  <data name="NewITRequiredDoc" xml:space="preserve">
+    <value>required documents</value>
+  </data>
+  <data name="NewITRequiredDocDir_PromoterDetails" xml:space="preserve">
+    <value>Director / Promotor Details</value>
+  </data>
+  <data name="NewITScanCopyOfPanCard" xml:space="preserve">
+    <value>please attach scanned copy of the PAN card&lt;span class="text-danger text-sm m-1"&gt;*&lt;/span&gt;</value>
+  </data>
+  <data name="ITAnn3ALinkBasicInfo" xml:space="preserve">
+    <value>Basic Information</value>
+  </data>
+  <data name="ITAnn3ALinkDirectorDetails" xml:space="preserve">
+    <value>Director / Promotor Details</value>
+  </data>
+  <data name="ITAnn3ALinkITeSUnitDetails" xml:space="preserve">
+    <value>IT/ITeS unit details</value>
+  </data>
+  <data name="MyApplicationApplicationStatus" xml:space="preserve">
+    <value>Application Status</value>
+  </data>
+  <data name="MyApplicationEntityName" xml:space="preserve">
+    <value>Entity Name</value>
+  </data>
+  <data name="MyApplicationEntityPAN" xml:space="preserve">
+    <value>Entity PAN</value>
+  </data>
+  <data name="MyApplicationEntityType" xml:space="preserve">
+    <value>Entity Type</value>
+  </data>
+  <data name="MyApplicationRegistrationNo" xml:space="preserve">
+    <value>Registration Number</value>
+  </data>
+  <data name="ITAnn3ALinkAck" xml:space="preserve">
+    <value>Acknowledgement</value>
+  </data>
+  <data name="ITAnn3ALinkAssisSought" xml:space="preserve">
+    <value>Assistance Sought</value>
+  </data>
+  <data name="ITAnn3ALinkBnkAccDetail" xml:space="preserve">
+    <value>Bank Account Details</value>
+  </data>
+  <data name="ITAnn3ALinkCommOper" xml:space="preserve">
+    <value>Commercial Operations</value>
+  </data>
+  <data name="ITAnn3ALinkDeclaration" xml:space="preserve">
+    <value>Declaration</value>
+  </data>
+  <data name="ITAnn3ALinkFinancialProjection" xml:space="preserve">
+    <value>Financial Projections</value>
+  </data>
+  <data name="ITAnn3EntityName" xml:space="preserve">
+    <value>Entity Name / Unit Name</value>
+  </data>
+</root>

@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Policy.master.cs" Inherits="Policy" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <asp:placeholder runat="server">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required favicon tags-->
+  <link rel="apple-touch-icon" sizes="180x180" href="<%: ResolveUrl("~/images/apple-touch-icon.png")%>">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%: ResolveUrl("~/images/favicon-32x32.png")%>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<%: ResolveUrl("~/images/favicon-16x16.png")%>">
+  <link rel="manifest" href="<%: ResolveUrl("~/images/site.webmanifest")%>">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<%: ResolveUrl("~/Content/bootstrap.min.css") %>">
+  <link rel="stylesheet" type="text/css" href="<%: ResolveUrl("~/Content/style.css") %>">
+  <link rel="stylesheet" type="text/css" href="<%: ResolveUrl("~/Content/all.min.css")%>"> 
+         <link rel="stylesheet" type="text/css" href="<%: ResolveUrl("~/Content/gijgo.min.css")%>"> 
+        
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/jquery-3.4.1.slim.min.js") %>"></script>
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/popper.min.js") %>"></script>
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/bootstrap.min.js")%>"></script>
+  <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/all.min.js")%>"></script>
+        <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/offcanvas.js")%>"></script>
+        <script type="text/javascript" src="<%: ResolveUrl("~/Scripts/gijgo.min.js")%>"></script>
+        
+  <title>Home &bull; Directorate of ICT & e-Governance</title>
+    </asp:PlaceHolder>
+</head>
+    <form id="form1" runat="server">
+<body>    
+  <header class="bg-alpha">
+    <div class="container-fluid">
+       <a href="index.html">
+        <div class="logo"><img src="<%: ResolveUrl("~/images/emblem-of-india.png")%>" alt=""></div>
+      </a>
+      <div class="website-name">
+        <div class="branch-name text-beta">Directorate of ICT & e-Governance</div>
+        <div class="department-name text-beta">Department of Science & Technology</div>
+        <div class="government-name text-beta">Government of Gujarat</div>
+      </div> <!-- website-name ends -->
+      <div class="menu-container">
+        <ul>
+          <li data-toggle="offcanvas" class="d-md-none"><a href="#"><i class="fas fa-bars"></i><span>Sidebar</span></a></li>
+          <li class="weight-semi-bold text-beta"><i class="fas fa-praying-hands"></i><span>Welcome,</span> <span><asp:Label ID="lblUserName" runat="server"></asp:Label></span></li>
+          <li> <asp:LinkButton runat ="server" ID="LinkButton1" Text ="Logout" OnClick="lnkLogout_Click"></asp:LinkButton></li>
+        </ul>
+      </div> <!-- menu-container ends -->
+      <div class="clear"></div>
+    </div> <!-- container ends -->
+  </header>
+  <div class="container">
+      <div class="row">
+      <div class="col-12">
+        <div class="page-header bg-delta border-delta position-relative">
+          <div class="page-header-icon bg-gamma border-gamma position-absolute"><i class="fas fa-file-alt text-delta"></i></div>
+          <div class="page-header-text weight-semi-bold text-beta text-lg text-capitalize"><asp:label runat ="server" ID="lblPage"></asp:label></div>
+        </div> <!-- page-header ends -->
+      </div> <!-- col ends -->
+    </div> <!-- row ends -->
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-md-3 sidebar-offcanvas">
+        <section>
+          <div class="list-group">
+            <a href="Home.aspx" class="list-group-item list-group-item-action text-sm active">Home</a>
+
+              <asp:LinkButton runat ="server" ID="LinkButton2" Text ="New Application"  class="list-group-item list-group-item-action text-sm" OnClick="LinkButton2_Click"></asp:LinkButton>
+            <%--<a href="<%: ResolveUrl("~/EntryForms/NewApplicationIT.aspx?MD={0},Uri.EscapeDataString('Add')")%>" class="list-group-item list-group-item-action text-sm">New Application</a>--%>
+            <a href="<%: ResolveUrl("~/EntryForms/MyApplicationIT.aspx")%>" class="list-group-item list-group-item-action text-sm">My Applications</a>
+            <a href="Account/MyProfile.aspx" class="list-group-item list-group-item-action text-sm">My Profile</a>
+            <a href="Logout.aspx" class="list-group-item list-group-item-action text-sm">Logout</a>
+          </div> <!-- list-group ends -->
+        </section>
+      </div> <!-- col ends -->
+         
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        
+      
+    </div> <!-- row ends -->
+  </div> <!-- container ends -->
+    
+  <footer class="bg-alpha">
+    <div class="container text-center">
+      <span class="text-delta text-sm">&copy; Directorate of ICT & e-Governance. All Rights Reserved.</span>
+    </div>
+  </footer>
+</body>
+        </form>
+</html>
